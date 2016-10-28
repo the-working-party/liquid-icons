@@ -13,9 +13,12 @@ $('.add-to-cart').on('click', function(){
  	else {
  		console.log(222);
  		itemCount++;
+ 		// setTimeout("$('.item-counter').removeClass('item-counter-trans')", 3000);
  		$('.item-counter').removeClass('item-counter-trans');
-		$('.item-counter').text(itemCount);
-		$('.item-counter').addClass('item-counter-addmore');
+ 		$('.item-counter').addClass('item-counter-trans-scale');
+		setTimeout("$('.item-counter').text(itemCount)", 300);
+		setTimeout("$('.item-counter').removeClass('item-counter-trans-scale')", 300);
+		setTimeout("$('.item-counter').addClass('item-counter-trans');", 600);
  	}
 });
 
@@ -23,4 +26,3 @@ $('.add-to-cart').on('click', function(){
 $('.reset').on('click', function(){
 location.reload();
 });
-

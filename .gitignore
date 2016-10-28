@@ -1,3 +1,4 @@
+**/.DS_Store
 *.DS_Store
 .DS_Store
-icon-dev/node_modules/
+**/node_modules/

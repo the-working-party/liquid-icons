@@ -1,0 +1,89 @@
+body {
+  background: white;
+  color: white;
+  text-align: center; }
+
+a {
+  color: inherit; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+h1 {
+  font-size: 3em; }
+
+.menu-open-button, .item-counter {
+  background: black;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 20px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms; }
+
+.menu-open-button {
+  z-index: 2;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 400ms;
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer; }
+
+.menu-open {
+  display: none; }
+
+.bag-icon {
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+
+.bag-btn {
+  filter: url("#shadowed-goo");
+  box-sizing: border-box;
+  font-size: 55px; }
+  .bag-btn a {
+    text-decoration: none; }
+
+.item-counter {
+  transition-duration: 180ms; }
+  .item-counter:hover {
+    background: purple;
+    color: white; }
+
+.menu-open-button:hover {
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0); }
+
+@keyframes button-pulse {
+  0% {
+    transform: scale(1, 1) translate3d(0, 0, 0); }
+  50% {
+    transform: scale(1.03, 1.03) translate3d(0, 0, 0); }
+  100% {
+    transform: scale(1, 1) translate3d(0, 0, 0); } }
+
+.menu-open-button-trans {
+  transform-origin: center center;
+  animation: button-pulse 300ms linear; }
+
+.item-counter-trans {
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-duration: 800ms;
+  transform: translate3d(110px, 0, 0); }
+
+@keyframes reset-btn {
+  0% {
+    transform: scale(1, 1) translate3d(110px, 0, 0); }
+  100% {
+    transform: scale(0.1, 0.1) translate3d(110px, 0, 0); } }
+
+.item-counter-addmore {
+  transform-origin: 50% 50%;
+  animation: reset-btn 400ms linear; }

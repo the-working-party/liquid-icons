@@ -1,0 +1,6 @@
+development:
+  theme_id: 165990088
+  password: c0cbac480a190649c4f9e32d68c60212
+  store: twp-peter-test-store.myshopify.com
+  bucket_size: 40
+  refill_rate: 2

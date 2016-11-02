@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script>
+
+</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="bag-btn">
+    <svg class="menu-open-button bag-icon"><use xlink:href="#bag-icon"></use></svg>
+    <a href="#" class="item-counter">0</a>
+  </div>
+</div>
+<div class="buttons">
+  <button class="add-to-cart">add to cart</button>
+  <button class="reset">reset</button>
+</div>
+
+
+<!-- filters -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+<!--           <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" /> -->
+          <feComposite in2="shadow" in="goo" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+</svg>
+
+
+<svg>
+  <symbol id="bag-icon" viewBox="0 0 7.875 7.875">
+  <title>bag</title>
+  <circle class="bag-outer" cx="4.031" cy="4.031" r="3.531"/>
+  <path class="bag-inner" d="M5.683,5.539c0,0.228-0.193,0.41-0.433,0.41H2.755c-0.239,0-0.433-0.182-0.433-0.41v-2.45h3.361V5.539z
+   M3.268,2.291c0-0.228,0.193-0.41,0.433-0.41h0.627c0.239,0,0.433,0.182,0.433,0.41v0.57H3.28v-0.57H3.268z M5.797,2.861h-0.82
+  v-0.57c0-0.353-0.296-0.638-0.661-0.638H3.689c-0.364,0-0.661,0.285-0.661,0.638v0.57h-0.82c-0.068,0-0.114,0.046-0.114,0.114v2.564
+  c0,0.353,0.296,0.638,0.661,0.638h2.507c0.364,0,0.661-0.285,0.661-0.638V2.975C5.911,2.918,5.866,2.861,5.797,2.861z"/>
+  </symbol>
+</svg>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
